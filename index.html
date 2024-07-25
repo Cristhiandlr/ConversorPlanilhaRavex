@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leitor de Planilha e JSON</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.0/xlsx.full.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Leitor de Planilha e JSON</h1>
+        <div class="file-inputs">
+            <div class="input-group">
+                <label for="excelInput">Escolha a planilha Excel:</label>
+                <input type="file" id="excelInput" accept=".xlsx, .xls">
+            </div>
+            <div class="input-group">
+                <label for="jsonInput">Escolha o arquivo JSON:</label>
+                <input type="file" id="jsonInput" accept=".json">
+            </div>
+        </div>
+        <div class="button-group">
+            <button id="generateButton">Gerar Nova Planilha</button>
+        </div>
+        <div id="summary" class="summary"></div>
+    </div>
+</body>
+</html>
